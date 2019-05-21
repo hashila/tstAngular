@@ -2,7 +2,7 @@
 
 
 <ul>
-  <li *ngFor="let vehi in vehicle">
+  <li *ngFor="let vehi of vehicle | async">
     {{vehi.brand}}
     {{vehi.buildYear}}
     {{vehi.engineNumber}}
@@ -14,3 +14,4 @@
 
   </li>
 </ul>
+<p>hashila</p>
